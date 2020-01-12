@@ -1,0 +1,57 @@
+\hypertarget{class_read_1_1_read}{}\section{Read.\+Read Class Reference}
+\label{class_read_1_1_read}\index{Read.\+Read@{Read.\+Read}}
+
+
+An abstract object that handles file I/O and uses two methods.  
+
+
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{class_read_1_1_read_a36ee1b801e071f6095084eb68031f4bf}{load\+\_\+stdnt\+\_\+data}} (s)
+\begin{DoxyCompactList}\small\item\em A method to take in a text file, read the student information inside, and load it into S\+A\+Lst. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{class_read_1_1_read_ae485f030b6a773958fdf92845df93c31}{load\+\_\+dcap\+\_\+data}} (s)
+\begin{DoxyCompactList}\small\item\em A method to read a text file containing department information in the assignment, and load it into D\+Cap\+A\+Lst. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+An abstract object that handles file I/O and uses two methods. 
+
+One is to read student information and load it into S\+A\+Lst. The other one is to read Deparment information and load it into D\+Cap\+A\+Lst 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_read_1_1_read_ae485f030b6a773958fdf92845df93c31}\label{class_read_1_1_read_ae485f030b6a773958fdf92845df93c31}} 
+\index{Read\+::\+Read@{Read\+::\+Read}!load\+\_\+dcap\+\_\+data@{load\+\_\+dcap\+\_\+data}}
+\index{load\+\_\+dcap\+\_\+data@{load\+\_\+dcap\+\_\+data}!Read\+::\+Read@{Read\+::\+Read}}
+\subsubsection{\texorpdfstring{load\+\_\+dcap\+\_\+data()}{load\_dcap\_data()}}
+{\footnotesize\ttfamily def Read.\+Read.\+load\+\_\+dcap\+\_\+data (\begin{DoxyParamCaption}\item[{}]{s }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+A method to read a text file containing department information in the assignment, and load it into D\+Cap\+A\+Lst. 
+
+Each line in the file is read using list comprehension. Then, (DeptT, N) tuples are created where DeptT is the deparment and N is the capacity. Inputs them into D\+Cap\+A\+Lst 
+\begin{DoxyParams}{Parameters}
+{\em 1} & A string corresponding to the name of the input file \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_read_1_1_read_a36ee1b801e071f6095084eb68031f4bf}\label{class_read_1_1_read_a36ee1b801e071f6095084eb68031f4bf}} 
+\index{Read\+::\+Read@{Read\+::\+Read}!load\+\_\+stdnt\+\_\+data@{load\+\_\+stdnt\+\_\+data}}
+\index{load\+\_\+stdnt\+\_\+data@{load\+\_\+stdnt\+\_\+data}!Read\+::\+Read@{Read\+::\+Read}}
+\subsubsection{\texorpdfstring{load\+\_\+stdnt\+\_\+data()}{load\_stdnt\_data()}}
+{\footnotesize\ttfamily def Read.\+Read.\+load\+\_\+stdnt\+\_\+data (\begin{DoxyParamCaption}\item[{}]{s }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+A method to take in a text file, read the student information inside, and load it into S\+A\+Lst. 
+
+Takes in a text file s in the format specified. Splits each line using list comprehension and uses it to create (macid, S\+InfoT) tuples. Then add them to S\+A\+Lst 
+\begin{DoxyParams}{Parameters}
+{\em 1} & the name of the text file with student info \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_read_8py}{Read.\+py}}\end{DoxyCompactItemize}

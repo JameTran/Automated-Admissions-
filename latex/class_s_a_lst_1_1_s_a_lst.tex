@@ -1,0 +1,163 @@
+\hypertarget{class_s_a_lst_1_1_s_a_lst}{}\section{S\+A\+Lst.\+S\+A\+Lst Class Reference}
+\label{class_s_a_lst_1_1_s_a_lst}\index{S\+A\+Lst.\+S\+A\+Lst@{S\+A\+Lst.\+S\+A\+Lst}}
+
+
+A class containing a list of (\textquotesingle{}macid\textquotesingle{}, S\+InfoT) tuples, and methods to add, delete and recieve information on.  
+
+
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_s_a_lst_1_1_s_a_lst_ac0886d79feebf875207b927b6d23a959}\label{class_s_a_lst_1_1_s_a_lst_ac0886d79feebf875207b927b6d23a959}} 
+def \mbox{\hyperlink{class_s_a_lst_1_1_s_a_lst_ac0886d79feebf875207b927b6d23a959}{init}} ()
+\begin{DoxyCompactList}\small\item\em A method to initalize the list. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{class_s_a_lst_1_1_s_a_lst_aa09d412a6f5562e32730d4857f7569ca}{add\+\_\+stdnt}} (m, i)
+\begin{DoxyCompactList}\small\item\em A method to add an (m, i) tuple to the list. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{class_s_a_lst_1_1_s_a_lst_a21390f23944739da71c78b8f684c7484}{remove}} (m)
+\begin{DoxyCompactList}\small\item\em A method to remove a (m, i) tuple corresponding to a macid m. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{class_s_a_lst_1_1_s_a_lst_ac2dc6bf81574e9e0e4a92be790460765}{elm}} (m)
+\begin{DoxyCompactList}\small\item\em A method to check whether or not a (m, i) tuple corresponding to input m is in the list. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{class_s_a_lst_1_1_s_a_lst_ad28fcb7dd27999a47ab1d074e69dfaa9}{info}} (m)
+\begin{DoxyCompactList}\small\item\em A method to return student info give a macid. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{class_s_a_lst_1_1_s_a_lst_af39c6101199578aefb42a15719754a61}{sort}} (f)
+\begin{DoxyCompactList}\small\item\em a method to sort the list by a generic lambda expression \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_s_a_lst_1_1_s_a_lst_aab0e944f9f796051c78b385df084f051}\label{class_s_a_lst_1_1_s_a_lst_aab0e944f9f796051c78b385df084f051}} 
+def {\bfseries getS} ()
+\item 
+def \mbox{\hyperlink{class_s_a_lst_1_1_s_a_lst_ae9c71d13a081d2eca72857c21840dd4b}{average}} (f)
+\begin{DoxyCompactList}\small\item\em A method to calculate the average gpa of the list filtered by generic lambda method. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{class_s_a_lst_1_1_s_a_lst_a8cdba5b89e936165b3628f52d4e80938}{allocate}} ()
+\begin{DoxyCompactList}\small\item\em A method to allocate the students into their preferred programs. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_s_a_lst_1_1_s_a_lst_a6f08c6ea97883ece00584929a0f4db65}\label{class_s_a_lst_1_1_s_a_lst_a6f08c6ea97883ece00584929a0f4db65}} 
+list {\bfseries s} = \mbox{[}$\,$\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A class containing a list of (\textquotesingle{}macid\textquotesingle{}, S\+InfoT) tuples, and methods to add, delete and recieve information on. 
+
+Also contains methods to recieve average and sort by generic lambda functions, and method to allocate students 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_s_a_lst_1_1_s_a_lst_aa09d412a6f5562e32730d4857f7569ca}\label{class_s_a_lst_1_1_s_a_lst_aa09d412a6f5562e32730d4857f7569ca}} 
+\index{S\+A\+Lst\+::\+S\+A\+Lst@{S\+A\+Lst\+::\+S\+A\+Lst}!add\+\_\+stdnt@{add\+\_\+stdnt}}
+\index{add\+\_\+stdnt@{add\+\_\+stdnt}!S\+A\+Lst\+::\+S\+A\+Lst@{S\+A\+Lst\+::\+S\+A\+Lst}}
+\subsubsection{\texorpdfstring{add\+\_\+stdnt()}{add\_stdnt()}}
+{\footnotesize\ttfamily def S\+A\+Lst.\+S\+A\+Lst.\+add\+\_\+stdnt (\begin{DoxyParamCaption}\item[{}]{m,  }\item[{}]{i }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+A method to add an (m, i) tuple to the list. 
+
+First checks the list to see if the m value is already in there if it is, raise a Key\+Error. Else, add the (m, i) tuple to the list 
+\begin{DoxyParams}{Parameters}
+{\em 1} & a string representing mac ids \\
+\hline
+{\em 2} & Student information of type S\+InfoT \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_s_a_lst_1_1_s_a_lst_a8cdba5b89e936165b3628f52d4e80938}\label{class_s_a_lst_1_1_s_a_lst_a8cdba5b89e936165b3628f52d4e80938}} 
+\index{S\+A\+Lst\+::\+S\+A\+Lst@{S\+A\+Lst\+::\+S\+A\+Lst}!allocate@{allocate}}
+\index{allocate@{allocate}!S\+A\+Lst\+::\+S\+A\+Lst@{S\+A\+Lst\+::\+S\+A\+Lst}}
+\subsubsection{\texorpdfstring{allocate()}{allocate()}}
+{\footnotesize\ttfamily def S\+A\+Lst.\+S\+A\+Lst.\+allocate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+A method to allocate the students into their preferred programs. 
+
+The method only allocates students with G\+PA 4.\+0 or higher. First, students with freechoice are sorted by G\+PA and directly placed into the programs of their choice. Next, students without free choice are allocated in based on department capacity. If students\textquotesingle{} First choice\+: if it is full, students are moved to their second choice, and so on. If a student is unable to be assigned, raise a Runtime\+Error \mbox{\Hypertarget{class_s_a_lst_1_1_s_a_lst_ae9c71d13a081d2eca72857c21840dd4b}\label{class_s_a_lst_1_1_s_a_lst_ae9c71d13a081d2eca72857c21840dd4b}} 
+\index{S\+A\+Lst\+::\+S\+A\+Lst@{S\+A\+Lst\+::\+S\+A\+Lst}!average@{average}}
+\index{average@{average}!S\+A\+Lst\+::\+S\+A\+Lst@{S\+A\+Lst\+::\+S\+A\+Lst}}
+\subsubsection{\texorpdfstring{average()}{average()}}
+{\footnotesize\ttfamily def S\+A\+Lst.\+S\+A\+Lst.\+average (\begin{DoxyParamCaption}\item[{}]{f }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+A method to calculate the average gpa of the list filtered by generic lambda method. 
+
+takes in list and filters it using lambda method. Then returns the average G\+PA. If the list is empty, raise a Value\+Error 
+\begin{DoxyParams}{Parameters}
+{\em 1} & generic lambda expression \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+average of type float 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_s_a_lst_1_1_s_a_lst_ac2dc6bf81574e9e0e4a92be790460765}\label{class_s_a_lst_1_1_s_a_lst_ac2dc6bf81574e9e0e4a92be790460765}} 
+\index{S\+A\+Lst\+::\+S\+A\+Lst@{S\+A\+Lst\+::\+S\+A\+Lst}!elm@{elm}}
+\index{elm@{elm}!S\+A\+Lst\+::\+S\+A\+Lst@{S\+A\+Lst\+::\+S\+A\+Lst}}
+\subsubsection{\texorpdfstring{elm()}{elm()}}
+{\footnotesize\ttfamily def S\+A\+Lst.\+S\+A\+Lst.\+elm (\begin{DoxyParamCaption}\item[{}]{m }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+A method to check whether or not a (m, i) tuple corresponding to input m is in the list. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em 1} & m of type string, where \textquotesingle{}m\textquotesingle{} is a macid \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean of whether or not (m,i) is in list 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_s_a_lst_1_1_s_a_lst_ad28fcb7dd27999a47ab1d074e69dfaa9}\label{class_s_a_lst_1_1_s_a_lst_ad28fcb7dd27999a47ab1d074e69dfaa9}} 
+\index{S\+A\+Lst\+::\+S\+A\+Lst@{S\+A\+Lst\+::\+S\+A\+Lst}!info@{info}}
+\index{info@{info}!S\+A\+Lst\+::\+S\+A\+Lst@{S\+A\+Lst\+::\+S\+A\+Lst}}
+\subsubsection{\texorpdfstring{info()}{info()}}
+{\footnotesize\ttfamily def S\+A\+Lst.\+S\+A\+Lst.\+info (\begin{DoxyParamCaption}\item[{}]{m }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+A method to return student info give a macid. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em 1} & takes in a string pertaining to macid \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+student information of type S\+InfotT 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_s_a_lst_1_1_s_a_lst_a21390f23944739da71c78b8f684c7484}\label{class_s_a_lst_1_1_s_a_lst_a21390f23944739da71c78b8f684c7484}} 
+\index{S\+A\+Lst\+::\+S\+A\+Lst@{S\+A\+Lst\+::\+S\+A\+Lst}!remove@{remove}}
+\index{remove@{remove}!S\+A\+Lst\+::\+S\+A\+Lst@{S\+A\+Lst\+::\+S\+A\+Lst}}
+\subsubsection{\texorpdfstring{remove()}{remove()}}
+{\footnotesize\ttfamily def S\+A\+Lst.\+S\+A\+Lst.\+remove (\begin{DoxyParamCaption}\item[{}]{m }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+A method to remove a (m, i) tuple corresponding to a macid m. 
+
+First check whether m is in list. If it isnt, raise Key\+Error Exception Else, remove (m, i) tuple corresponding to m 
+\begin{DoxyParams}{Parameters}
+{\em 1} & m of type string, corresponding to mac id \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_s_a_lst_1_1_s_a_lst_af39c6101199578aefb42a15719754a61}\label{class_s_a_lst_1_1_s_a_lst_af39c6101199578aefb42a15719754a61}} 
+\index{S\+A\+Lst\+::\+S\+A\+Lst@{S\+A\+Lst\+::\+S\+A\+Lst}!sort@{sort}}
+\index{sort@{sort}!S\+A\+Lst\+::\+S\+A\+Lst@{S\+A\+Lst\+::\+S\+A\+Lst}}
+\subsubsection{\texorpdfstring{sort()}{sort()}}
+{\footnotesize\ttfamily def S\+A\+Lst.\+S\+A\+Lst.\+sort (\begin{DoxyParamCaption}\item[{}]{f }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+a method to sort the list by a generic lambda expression 
+
+First, sorts the list in descending order. Next, takes in a generic lambda expression as input and uses it to filter list using filter() returns filterd list 
+\begin{DoxyParams}{Parameters}
+{\em 1} & lambda expression \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+List of tuples (m, i) where m is macid of type string and i is student info of type S\+InfoT 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_s_a_lst_8py}{S\+A\+Lst.\+py}}\end{DoxyCompactItemize}
